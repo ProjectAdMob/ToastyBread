@@ -25,7 +25,7 @@ public class Toaster {
 
     public void update(float delta) {
 
-        if(position.y == 0) { //Only jump when ground, for now.
+        //if(position.y == 0) { //Only jump when ground, for now.
 
             velocity.add(acceleration.cpy().scl(delta));
 
@@ -34,7 +34,7 @@ public class Toaster {
             }
 
             position.add(velocity.cpy().scl(delta));
-        }
+        //}
 
     }
 
